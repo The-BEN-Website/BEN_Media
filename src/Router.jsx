@@ -2,7 +2,8 @@ import { lazy } from "react";
 
 const Home = lazy(() => import("./pages/Home"));
 const Teachings = lazy(() => import("./pages/Teachings"));
-const Songs = lazy(() => import("./pages/Songs"));
+const Teaching = lazy(() => import("./components/Home/BlogList/BlogItem/index"));
+// const Songs = lazy(() => import("./pages/Songs"));
 const News = lazy(() => import("./pages/News"));
 const Contact = lazy(() => import("./pages/Contact"));
 
@@ -16,10 +17,10 @@ const AppRoutes = [
     path: "/teachings",
     element: <Teachings />,
   },
-  {
-    path: "/songs",
-    element: <Songs />,
-  },
+  // {
+  //   path: "/songs",
+  //   element: <Songs />,
+  // },
   {
     path: "/news",
     element: <News />,
@@ -30,7 +31,7 @@ const AppRoutes = [
   },
   {
     path: `/teachings/:id`,
-    element: <Teachings />,
+    element: <Teaching />,
   },
   {
     path: "*",
