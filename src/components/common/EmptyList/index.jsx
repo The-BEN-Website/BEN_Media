@@ -1,8 +1,9 @@
 import './styles.css';
+import EmptyGif from "../../../assets/empty.png"
 
 const EmptyList = () => (
   <div className='emptyList-wrap'>
-    <img src='/assets/images/13525-empty.gif' alt='empty' />
+    <img src={EmptyGif} alt='empty' />
   </div>
 );
 
