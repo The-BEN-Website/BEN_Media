@@ -5,9 +5,9 @@ const Header = () => {
 
     return (
         <div className='flex items-center justify-center relative h-fit lg:h-fit w-11/12 mx-auto font-my_font mt-14'>
-            <section className='w-11/12 h-fit flex flex-col lg:flex-row flex-col-reverse sm:flex-col'>
+            <section className='w-full h-fit flex flex-col lg:flex-row flex-col-reverse sm:flex-col'>
                 {/* main header content */}
-                <div className = 'w-full lg:w-1/2 flex flex-col items-center justify-center md:items-center lg:items-start gap-3' >
+                <div className = 'w-full flex flex-col items-center justify-center gap-3' >
                     <h2 className='text-black text-4xl lg:text-5xl font-bold font-my_font text-center md:text-start tracking-wide'>Contact Us Directly</h2>
                     <p className='tracking-widest text-black text-sm font-my_font w-2/3 text-center md:text-start'>
                     Looking for more information? Submit your information and BEN representative will follow up with you as soon as possible.
