@@ -2,7 +2,7 @@ import { lazy } from "react";
 
 const Home = lazy(() => import("./pages/Home"));
 const Teachings = lazy(() => import("./pages/Teachings"));
-const Teaching = lazy(() => import("./pages/Teachings/Header"));
+const Teaching = lazy(() => import("./pages/Teachings/TeachingViews"));
 const Songs = lazy(() => import("./pages/Songs"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const GalleryViews = lazy(() => import("./pages/Gallery/GalleryView"));
