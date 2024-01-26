@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
 import AudioPlayer from "./Audio";
-// const AUDIO_FILE = "https://music.youtube.com/watch?v=6Pd1ODrVazw&si=3B_T0lj-MMNRoN-N";
 
 
 const ImageView = () => {

@@ -1,4 +1,4 @@
-import Header from "./Teachings/Header"
+import Header from "./Teachings/Header";
 
 const Teachings = () => {
   return (
