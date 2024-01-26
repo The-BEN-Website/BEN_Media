@@ -52,7 +52,7 @@ const Home = () => {
     setSearchKey('');
   };
 
-  console.log(filteredTeachings.length, )
+  console.log(filteredTeachings.length)
   return (
     <div>
       {/* Search Bar */}

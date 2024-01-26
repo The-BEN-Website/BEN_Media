@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
+import AudioPlayer from "./Audio";
+// const AUDIO_FILE = "https://music.youtube.com/watch?v=6Pd1ODrVazw&si=3B_T0lj-MMNRoN-N";
+
+
 const ImageView = () => {
   const { id } = useParams();
   const [image, setImage] = useState([]);
@@ -42,10 +46,10 @@ const ImageView = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel nobis a explicabo quo obcaecati laboriosam, reprehenderit beatae eum rerum et voluptatum molestias nemo eveniet impedit? Temporibus quos quo eos aperiam. Nihil, officia velit nulla veniam id architecto sint? Laudantium, ab earum laboriosam quidem itaque sunt? Animi quisquam quis neque!
         </p>
 
-        <section className='flex justify-between gap-5 w-full border border-black h-10'>
-            <span className='border border-red-600 w-1/2'></span>
-            <span className='border border-blue-700 w-1/2'></span>
+        <section className='flex justify-between gap-5 w-full h-fit'>
+          <AudioPlayer  />
         </section>
+        
           <section className='flex items-center gap-3'>
                 <img src={image.download_url} className='w-10 h-10 rounded-full' />
                 <span className='flex flex-col gap-1'>
