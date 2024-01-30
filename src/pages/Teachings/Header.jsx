@@ -67,18 +67,18 @@ const Home = () => {
       {!filteredTeachings.length ? (
         <EmptyList /> 
       ) : (
-        <ul className='flex gap-6 justify-center flex-wrap w-fit m-auto mb-10'>
+        <ul className='grid grid-cols-1 lg:grid-cols-3 gap-16 w-10/12 m-auto mb-10'>
           {filteredTeachings.map(({ id, author, download_url }) => (
-            <li key={id} className='h-fit flex flex-col gap-2 border border-gray-100 p-2 rounded-md'>
+            <li key={id} className='h-fit flex flex-col gap-2 border border-gray-100 rounded-md'>
               {/* cover */}
-              <img src={download_url} alt={author} style={{ maxWidth: '400px' }} />
+              <img src={download_url} alt={author} className='w-full' />
               {/* header & tag */}
-              <span className='flex flex-col gap-2'>
+              <span className='flex flex-col gap-2 px-3'>
                 <p className='bg-gradient-to-r from-red-500 via-red-400 to-red-300 w-fit px-3 py-1 rounded-sm text-sm text-white '>Study</p>
                 <h2 className='text-xl'>How you can study your bible</h2>
               </span>
               {/* description */}
-              <p className='text-gray-400 text-base'>
+              <p className='text-gray-400 text-base px-3'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
                 <br/> 
                 quasi veritatis similique sint libero ipsam porro perspiciatis 
@@ -87,7 +87,7 @@ const Home = () => {
               </p>
 
               {/* views and author */}
-              <section className='flex justify-between items-center'>
+              <section className='flex justify-between items-center px-3'>
                 <section className='flex items-center gap-3'>
                 <img src={download_url} className='w-10 h-10 rounded-full' />
                 <span className='flex flex-col gap-1'>
