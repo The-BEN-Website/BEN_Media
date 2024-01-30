@@ -50,9 +50,9 @@ const Footer = () => {
                   <li className='text-balance'>
                     <a
                       href="mailto:mediabelieversequippingnetwork@gmail.com"
-                      className="hover:underline text-balance"
+                      className="hover:underline text-balance "
                     >
-                      mediabelieversequippingnetwork@gmail.com
+                      mediabelieversequipping<br/>network@gmail.com
                     </a>
                   </li>
                 </ul>
