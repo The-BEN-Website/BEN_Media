@@ -38,9 +38,9 @@ const Home = () => {
       {!filteredNews.length ? (
         <EmptyList /> 
       ) : (
-        <ul className='flex gap-8 lg:gap-16 justify-around flex-wrap w-full mx-auto mb-10'>
-          {filteredNews.map(({ author, description, title, urlToImage, publishedAt, url }) => (
-            <li key={author} className='w-[26.5rem] h-fit flex flex-col gap-2 border border-gray-100 rounded-md pb-3'>
+        <ul className='grid grid-cols-none w-full lg:w-fit lg:grid-cols-3 gap-10 mx-auto mb-10' >
+          {filteredNews.map(({ id, author, description, title, urlToImage, publishedAt, url }) => (
+            <li key={id} className='h-fit flex flex-col gap-2 border border-gray-100 rounded-md pb-3'>
               {/* cover */}
               <img src={urlToImage} alt={author} className='w-fit' />
               {/* header & tag */}

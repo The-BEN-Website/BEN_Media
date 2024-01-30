@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section className="w-10/12 mx-auto">
       <section className=" w-full h-fit flex flex-col md:flex-row items-center gap-10">
-        <img src={Img} className="w-3/4 md:w-1/2  rounded-md"/>
+        <img src={Img} className="w-full md:w-1/2 rounded-md"/>
 
         <section className="flex flex-col gap-5 md:w-1/2">
           <section className='flex items-center gap-3'>
@@ -18,7 +18,7 @@ const Banner = () => {
 
           <h1 className="text-4xl">Tongues and Interpretation</h1>
 
-          <p className="text-lg text-wrap">
+          <p className="text-lg text-wrap text-justify" >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur eveniet repudiandae adipisci veniam reiciendis ullam soluta, debitis, culpa, magnam assumenda nostrum voluptatem voluptates dolorum alias natus odio! Cum, culpa!
           </p>
 
