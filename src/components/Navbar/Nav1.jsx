@@ -20,7 +20,7 @@ const NavLinks = [
           to={link.href}
           className={({ isActive }) =>
             [
-              "btn py-2 px-3 mx-2 text-center   hover:text-red-600 ",
+              "btn py-2 px-3 mx-2 text-center hover:text-red-600 ",
               isActive ? "underline decoration-2 decoration-red-600 " : "",
               width < 768 ? " block my-5 text-black" : "inline-block my-2 ml-0 text-black",
             ].join(" ")
@@ -35,7 +35,7 @@ const NavLinks = [
   return (
     <nav
       className={[
-        "p-5  justify-between items-center flex",
+        "p-5 justify-between items-center flex",
         width < 768 ? "flex-col" : "flex-row",
       ].join(" ")}
     >
