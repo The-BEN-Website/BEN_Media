@@ -3,6 +3,7 @@ import EmptyList from '../../components/common/EmptyList';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+  // eslint-disable-next-line no-unused-vars
   const [news, setNews] = useState([]);
   const [filteredNews, setFilteredNews] = useState([]); 
 
